@@ -8,7 +8,7 @@ This plugin requires Grunt `~0.4.1`
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-cssjanus --save-dev
+npm install /path/to/grunt-cssjanus --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
@@ -23,13 +23,13 @@ grunt.loadNpmTasks('grunt-cssjanus');
 Type: `Boolean`
 Default value: `false`
 
-Wheter to replce 'ltr' with 'rtl' and vice versa in urls.
+Whether to replace 'ltr' with 'rtl' and vice versa in urls.
 
 #### options.swapLeftRightInUrl
 Type: `Boolean`
 Default value: `false`
 
-Wheter to replce 'left' with 'right' and vice versa in urls.
+Whether to replace 'left' with 'right' and vice versa in urls.
 
 
 ## Release History
