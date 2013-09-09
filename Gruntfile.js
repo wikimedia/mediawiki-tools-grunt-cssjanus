@@ -17,7 +17,8 @@ module.exports = function(grunt) {
     cssjanus: {
       options: {
         swapLtrRtlInUrl: true,
-        swapLeftRightInUrl: false
+        swapLeftRightInUrl: false,
+        generateExactDuplicates: false
       },
     },
 

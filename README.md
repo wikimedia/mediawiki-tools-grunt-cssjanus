@@ -31,6 +31,13 @@ Default value: `false`
 
 Whether to replace 'left' with 'right' and vice versa in urls.
 
+#### options.generateExactDuplicates
+Type: `Boolean`
+Default value: `false`
+
+Whether to generate the RTL file if it ends up being the same as the LTR file.
+
 
 ## Release History
+0.1.1 - Add the generateExactDuplicates option
 0.1.0 - initial release
