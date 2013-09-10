@@ -21,7 +21,7 @@ grunt.loadNpmTasks('grunt-cssjanus');
 
 #### options.swapLtrRtlInUrl
 Type: `Boolean`
-Default value: `false`
+Default value: `true`
 
 Whether to replace 'ltr' with 'rtl' and vice versa in urls.
 
