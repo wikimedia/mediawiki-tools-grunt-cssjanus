@@ -40,6 +40,8 @@ Whether to generate the RTL file if it ends up being the same as the LTR file.
 
 ## Release History
 
+0.1.2 - Only outputs file creation message if file has been created
+
 0.1.1 - Add the generateExactDuplicates option
 
 0.1.0 - initial release
