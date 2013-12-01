@@ -1,7 +1,7 @@
 {
   "name": "grunt-cssjanus",
   "description": "Grunt plugin to convert CSS stylesheets between left-to-right and right-to-left",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "homepage": "https://github.com/yoavf/grunt-cssjanus",
   "author": {
     "name": "Yoav Farhi",

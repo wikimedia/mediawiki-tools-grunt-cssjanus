@@ -46,6 +46,8 @@ If set, the function will be called on the CSS after CSSJanus has run.
 
 ## Release History
 
+0.2.0 - Add the process content callbaack to the be called on css after CSSJanus has run.
+
 0.1.2 - Only outputs file creation message if file has been created
 
 0.1.1 - Add the generateExactDuplicates option
