@@ -14,6 +14,7 @@ module.exports = function(grunt) {
     var options = this.options({
       swapLtrRtlInUrl: true,
       swapLeftRightInUrl: false,
+      processContent: false,
     });
     // Iterate over all specified file groups.
     this.files.forEach(function(f) {
@@ -33,6 +34,9 @@ module.exports = function(grunt) {
 
       var cssjanus = require( 'cssjanus' );
       var rtlcss = cssjanus.transform( src, options.swapLtrRtlInUrl, options.swapLeftRightInUrl );
+      if ( options.processContent ) {
+        rtlcss = options.processContent( rtlcss, filepath );
+      }
       if ( ! options.generateExactDuplicates && rtlcss == src ) {
           grunt.log.writeln('Nothing to flip in ' + f.src );
       } else { // Write the destination file.
