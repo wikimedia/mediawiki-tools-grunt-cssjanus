@@ -37,6 +37,12 @@ Default value: `false`
 
 Whether to generate the RTL file if it ends up being the same as the LTR file.
 
+#### options.processContent
+Type: `Callback`
+Default value: `false`
+
+If set, the function will be called on the CSS after CSSJanus has run.
+
 
 ## Release History
 
