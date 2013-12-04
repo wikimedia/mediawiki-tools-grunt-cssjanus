@@ -35,7 +35,7 @@ module.exports = function(grunt) {
       var cssjanus = require( 'cssjanus' );
       var rtlcss = cssjanus.transform( src, options.swapLtrRtlInUrl, options.swapLeftRightInUrl );
       if ( options.processContent ) {
-        rtlcss = options.processContent( rtlcss, filepath );
+        rtlcss = options.processContent( rtlcss );
       }
       if ( ! options.generateExactDuplicates && rtlcss == src ) {
           grunt.log.writeln('Nothing to flip in ' + f.src );
