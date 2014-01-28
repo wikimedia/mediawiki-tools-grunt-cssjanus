@@ -46,6 +46,8 @@ If set, the function will be called on the CSS after CSSJanus has run.
 
 ## Release History
 
+0.2.2 - Revert to using the standard cssjanus 1.0.2 module
+
 0.2.1 - Fix an undefined variable in the processContent callback.
 		Temporarily depend on patched cssjanus module while waiting for bugs to be fixed upstream. See:
 			https://github.com/nacin/cssjanus/commit/e2e761911c8f4d7755e002996f2788cfb603b74c
