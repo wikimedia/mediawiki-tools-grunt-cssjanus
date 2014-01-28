@@ -26,7 +26,7 @@
     "node": ">= 0.8.0"
   },
   "dependencies": {
-    "cssjanus" : "git://github.com/nacin/cssjanus.git#e2e761911c8f4d7755e002996f2788cfb603b74c"
+    "cssjanus" : ">=1.0.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1"
