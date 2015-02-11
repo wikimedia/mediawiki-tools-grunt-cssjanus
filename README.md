@@ -46,7 +46,7 @@ If set, the function will be called on the CSS after CSSJanus has run.
 
 ## Release History
 
-0.2.3 - Update minimum cssjanus version to 1.1.2
+0.2.4 - Update minimum cssjanus version to 1.1.2
 
 0.2.3 - Update minimum cssjanus version
 
