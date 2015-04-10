@@ -18,6 +18,7 @@ grunt.loadNpmTasks( 'grunt-cssjanus' );
 ```
 
 ### Options
+_Run this task with the `grunt cssjanus` command._
 
 #### options.swapLtrRtlInUrl
 Type: `Boolean`
@@ -43,6 +44,34 @@ Default value: `false`
 
 If set, the function will be called on the CSS after CSSJanus has run.
 
+## Usage
+
+This plugin uses the standard Grunt multi task for file operations. See [Configuring tasks](http://gruntjs.com/configuring-tasks#task-configuration-and-targets) for all supported options and formats.
+
+### Basic distribution
+```js
+grunt.initConfig({
+  cssjanus: {
+    build: {
+      files: {
+      	'dist/head.rtl.css': 'src/head.css',
+      	'dist/main.rtl.css': 'src/main.css'
+      }
+    }
+  }
+});
+```
+
+### Transform in-place
+```js
+grunt.initConfig({
+  cssjanus: {
+    build: {
+      src: [ 'src/head.css', 'src/main.css' ]
+    }
+  }
+});
+```
 
 ## Release History
 
