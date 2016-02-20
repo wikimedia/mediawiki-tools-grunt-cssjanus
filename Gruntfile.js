@@ -1,33 +1,50 @@
-/*
+/**
  * grunt-cssjanus
  * https://github.com/cssjanus/grunt-cssjanus
  *
  * Copyright (c) 2013 Yoav Farhi
  * Licensed under the MIT license.
  */
-
 'use strict';
 
-module.exports = function(grunt) {
+module.exports = function ( grunt ) {
+	grunt.loadTasks( 'tasks' );
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-jscs' );
 
-  // Project configuration.
-  grunt.initConfig({
+	grunt.initConfig( {
+		jshint: {
+			options: {
+				jshintrc: true
+			},
+			src: '.'
+		},
+		jscs: {
+			src: '.'
+		},
+		cssjanus: {
+			options: {
+				swapLtrRtlInUrl: true,
+				swapLeftRightInUrl: false,
+				generateExactDuplicates: false
+			},
+			'fixtures/actual.css': 'fixtures/input.css'
+		}
+	} );
 
-    // Configuration to be run.
-    cssjanus: {
-      options: {
-        swapLtrRtlInUrl: true,
-        swapLeftRightInUrl: false,
-        generateExactDuplicates: false
-      },
-    },
+	grunt.registerTask( 'match', function () {
+		var actual = grunt.file.read( 'fixtures/actual.css' ),
+			expected = grunt.file.read( 'fixtures/expected.css' );
+		if ( actual !== expected ) {
+			grunt.log.error( 'Test result mismatch.' );
+			grunt.log.subhead( 'Actual' );
+			grunt.log.write( actual );
+			grunt.log.subhead( 'Expected' );
+			grunt.log.write( expected );
+			return false;
+		}
+		grunt.log.ok( 'Test result matches expectation.' );
+	} );
 
-  });
-
-  // Actually load this plugin's task(s).
-  grunt.loadTasks('tasks');
-
-  // By default, lint and run all tests.
-  grunt.registerTask('default', ['cssjanus']);
-
+	grunt.registerTask( 'default', [ 'jshint', 'jscs', 'cssjanus', 'match' ] );
 };

@@ -1,0 +1,8 @@
+.foo {
+	padding: 1px 2px 3px 4px;
+	margin-left: 1em;
+	background-position: 5% 100px;
+	background: #fff (arrow-ltr.png) no-repeat;
+	cursor: ne-resize;
+	border-radius: 1px 2px;
+}

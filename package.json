@@ -1,7 +1,7 @@
 {
   "name": "grunt-cssjanus",
+  "version": "0.3.0",
   "description": "Grunt plugin to convert CSS stylesheets between left-to-right and right-to-left",
-  "version": "0.2.4",
   "homepage": "https://github.com/cssjanus/grunt-cssjanus",
   "author": {
     "name": "Yoav Farhi",
@@ -15,21 +15,21 @@
   "bugs": {
     "url": "https://github.com/cssjanus/grunt-cssjanus/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/cssjanus/grunt-cssjanus/blob/master/LICENSE-MIT"
-    }
-  ],
-  "main": "Gruntfile.js",
+  "license": "MIT",
   "engines": {
     "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt"
   },
   "dependencies": {
     "cssjanus": ">=1.1.2"
   },
   "devDependencies": {
-    "grunt": "~0.4.1"
+    "grunt": "^0.4.2",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-jscs": "^2.7.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
