@@ -66,9 +66,11 @@ grunt.initConfig({
 
 ## Release History
 
+0.3.0 - Extend version range of Grunt peerDependency
+
 0.2.4 - Update minimum cssjanus version to 1.1.2
 
-0.2.3 - Update minimum cssjanus version
+0.2.3 - Update minimum cssjanus version to 1.1.1
 
 0.2.2 - Revert to using the standard cssjanus 1.0.2 module
 
