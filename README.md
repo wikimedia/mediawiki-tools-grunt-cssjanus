@@ -64,17 +64,6 @@ grunt.initConfig({
 });
 ```
 
-### Transform in-place
-```js
-grunt.initConfig({
-  cssjanus: {
-    build: {
-      src: [ 'src/head.css', 'src/main.css' ]
-    }
-  }
-});
-```
-
 ## Release History
 
 0.2.4 - Update minimum cssjanus version to 1.1.2
