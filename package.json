@@ -23,7 +23,7 @@
     "test": "grunt"
   },
   "dependencies": {
-    "cssjanus": ">=1.1.2"
+    "cssjanus": ">=1.1.3"
   },
   "devDependencies": {
     "grunt": "^0.4.2",
