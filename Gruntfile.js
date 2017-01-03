@@ -9,18 +9,14 @@
 
 module.exports = function ( grunt ) {
 	grunt.loadTasks( 'tasks' );
-	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
-	grunt.loadNpmTasks( 'grunt-jscs' );
+	grunt.loadNpmTasks( 'grunt-eslint' );
 
 	grunt.initConfig( {
-		jshint: {
-			options: {
-				jshintrc: true
-			},
-			src: '.'
-		},
-		jscs: {
-			src: '.'
+		eslint: {
+			src: [
+				'*.js',
+				'tasks/*.js'
+			]
 		},
 		cssjanus: {
 			options: {
@@ -46,5 +42,5 @@ module.exports = function ( grunt ) {
 		grunt.log.ok( 'Test result matches expectation.' );
 	} );
 
-	grunt.registerTask( 'default', [ 'jshint', 'jscs', 'cssjanus', 'match' ] );
+	grunt.registerTask( 'default', [ 'eslint', 'cssjanus', 'match' ] );
 };
