@@ -29,7 +29,7 @@
     "grunt": "^0.4.2",
     "grunt-cli": "^0.1.13",
     "grunt-eslint": "^19.0.0",
-    "stylelint-config-wikimedia": "^0.3.0"
+    "eslint-config-wikimedia": "^0.3.0"
   },
   "peerDependencies": {
     "grunt": ">=0.4.0"
