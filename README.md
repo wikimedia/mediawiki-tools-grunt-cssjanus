@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/cssjanus/grunt-cssjanus.svg?branch=master)](https://travis-ci.org/cssjanus/grunt-cssjanus) [![npm](https://img.shields.io/npm/v/grunt-cssjanus.svg?style=flat)](https://www.npmjs.com/package/grunt-cssjanus)
+[![Build Status](https://travis-ci.com/cssjanus/grunt-cssjanus.svg?branch=master)](https://travis-ci.com/cssjanus/grunt-cssjanus) [![npm](https://img.shields.io/npm/v/grunt-cssjanus.svg?style=flat)](https://www.npmjs.com/package/grunt-cssjanus)
 
 # grunt-cssjanus
 
