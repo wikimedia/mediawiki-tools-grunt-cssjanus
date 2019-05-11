@@ -31,7 +31,7 @@
     "grunt-eslint": "21.0.0"
   },
   "peerDependencies": {
-    "grunt": ">=0.4.0"
+    "grunt": ">=1.0.4"
   },
   "keywords": [
     "gruntplugin"
