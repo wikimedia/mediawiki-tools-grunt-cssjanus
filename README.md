@@ -5,7 +5,7 @@
 Grunt plugin to convert CSS stylesheets between left-to-right and right-to-left
 
 ## Getting Started
-This plugin requires Grunt `0.4` or higher
+This plugin requires Grunt `1.0.4` or higher
 
 If you haven't used [Grunt](https://gruntjs.com/) before, be sure to check out the [Getting Started](https://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](https://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
