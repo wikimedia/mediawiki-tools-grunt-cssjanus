@@ -66,6 +66,8 @@ grunt.initConfig({
 
 ## Release History
 
+0.5.0 - Provide cssjanus 1.3.2; drop support for Node 7 and earlier
+
 0.4.0 - Drop support for Node 0.10 and 0.12.
 
 0.3.0 - Extend version range of Grunt peerDependency
