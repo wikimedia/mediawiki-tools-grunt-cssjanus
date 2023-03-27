@@ -1,5 +1,10 @@
 # Release History
 
+## 1.0.0
+
+* Update cssjanus to `^2.0.0`.
+* Remove support for Node 12 and earlier.
+
 ## 0.5.0
 
 * Update cssjanus to `^1.3.2`.

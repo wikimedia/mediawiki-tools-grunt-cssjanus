@@ -8,12 +8,8 @@
 
 module.exports = function ( grunt ) {
 	grunt.loadTasks( 'tasks' );
-	grunt.loadNpmTasks( 'grunt-eslint' );
 
 	grunt.initConfig( {
-		eslint: {
-			src: '.'
-		},
 		cssjanus: {
 			options: {
 				swapLtrRtlInUrl: true,
@@ -25,8 +21,8 @@ module.exports = function ( grunt ) {
 	} );
 
 	grunt.registerTask( 'match', function () {
-		var actual = grunt.file.read( 'fixtures/actual.css' ),
-			expected = grunt.file.read( 'fixtures/expected.css' );
+		const actual = grunt.file.read( 'fixtures/actual.css' );
+		const expected = grunt.file.read( 'fixtures/expected.css' );
 		if ( actual !== expected ) {
 			grunt.log.error( 'Test result mismatch.' );
 			grunt.log.subhead( 'Actual' );
@@ -38,5 +34,5 @@ module.exports = function ( grunt ) {
 		grunt.log.ok( 'Test result matches expectation.' );
 	} );
 
-	grunt.registerTask( 'default', [ 'eslint', 'cssjanus', 'match' ] );
+	grunt.registerTask( 'test', [ 'cssjanus', 'match' ] );
 };

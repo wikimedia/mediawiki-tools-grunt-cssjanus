@@ -7,19 +7,18 @@
 'use strict';
 
 module.exports = function ( grunt ) {
-	var cssjanus = require( 'cssjanus' );
+	const cssjanus = require( 'cssjanus' );
 
 	grunt.registerMultiTask( 'cssjanus', 'Flip a css file direction from LTR to RTL', function () {
-		var options = this.options( {
+		const options = this.options( {
 			swapLtrRtlInUrl: true,
 			swapLeftRightInUrl: false,
 			processContent: false
 		} );
 		// Iterate over all specified file groups
 		this.files.forEach( function ( f ) {
-			var src, rtlcss;
 			// Flip specified files
-			src = f.src
+			const src = f.src
 				.filter( function ( filepath ) {
 					// Warn on and remove invalid source files (if nonull was set)
 					if ( !grunt.file.exists( filepath ) ) {
@@ -34,7 +33,11 @@ module.exports = function ( grunt ) {
 				} )
 				.join( grunt.util.normalizelf( grunt.util.linefeed ) );
 
-			rtlcss = cssjanus.transform( src, options.swapLtrRtlInUrl, options.swapLeftRightInUrl );
+			let rtlcss = cssjanus.transform(
+				src,
+				options.swapLtrRtlInUrl,
+				options.swapLeftRightInUrl
+			);
 			if ( options.processContent ) {
 				rtlcss = options.processContent( rtlcss );
 			}
@@ -45,8 +48,6 @@ module.exports = function ( grunt ) {
 				grunt.file.write( f.dest, rtlcss );
 				grunt.log.writeln( 'File "' + f.dest + '" created.' );
 			}
-
 		} );
 	} );
-
 };
