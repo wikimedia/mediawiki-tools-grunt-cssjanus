@@ -1,6 +1,5 @@
 /**
- * grunt-cssjanus
- * https://github.com/cssjanus/grunt-cssjanus
+ * grunt-cssjanus. https://www.mediawiki.org/wiki/CSSJanus
  *
  * Copyright (c) 2013 Yoav Farhi
  * Licensed under the MIT license.
