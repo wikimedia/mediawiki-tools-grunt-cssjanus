@@ -20,7 +20,7 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'match', function () {
+	grunt.registerTask( 'match', () => {
 		const actual = grunt.file.read( 'fixtures/actual.css' );
 		const expected = grunt.file.read( 'fixtures/expected.css' );
 		if ( actual !== expected ) {

@@ -16,10 +16,10 @@ module.exports = function ( grunt ) {
 			processContent: false
 		} );
 		// Iterate over all specified file groups
-		this.files.forEach( function ( f ) {
+		this.files.forEach( ( f ) => {
 			// Flip specified files
 			const src = f.src
-				.filter( function ( filepath ) {
+				.filter( ( filepath ) => {
 					// Warn on and remove invalid source files (if nonull was set)
 					if ( !grunt.file.exists( filepath ) ) {
 						grunt.log.warn( 'Source file "' + filepath + '" not found.' );
@@ -27,10 +27,8 @@ module.exports = function ( grunt ) {
 					}
 					return true;
 				} )
-				.map( function ( filepath ) {
-					// Read file source
-					return grunt.file.read( filepath );
-				} )
+				// Read file source
+				.map( ( filepath ) => grunt.file.read( filepath ) )
 				.join( grunt.util.normalizelf( grunt.util.linefeed ) );
 
 			let rtlcss = cssjanus.transform(
